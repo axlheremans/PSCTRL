@@ -1,0 +1,10 @@
+[Unit]
+Description=PS4 Dual Shock controller
+After=multi-user.target
+
+[Service]
+ExecStart=/opt/psctrl
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
